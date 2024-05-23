@@ -136,7 +136,7 @@ class SymbolMath:
         set_math = SetMath(one=set(alternatives), users=self.users)
         return set_math.convert_formula_to_set(str(a)) >= set_math.convert_formula_to_set(str(b))
 
-    def solve_eq(self, main_user: User, alternatives: list[str]) -> tuple[set, set]:
+    def solve_eq(self, main_user: User, alternatives: list[str] | set[str]) -> tuple[set, set]:
         alternatives = set(alternatives)
         eq = self.get_eq(main_user)
         left = None
