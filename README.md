@@ -21,7 +21,7 @@ All config (.json) files are placed in [/ExampleData/](ExampleData)
 > [/ExampleData/created/](ExampleData/created)
 >> contains direct tasks & not direct
 
-# Export py code to .exe
+# Export py code to executable file
 ```shell
 git clone https://github.com/MatveyFilippov/DMICS.git
 ```
@@ -31,7 +31,7 @@ pip install -r requirements.txt
 ```shell
 auto-py-to-exe 
 ```
-### paste path to main.py in row and run -> in folder 'output' will be your file
+> paste path to `main.py` in row and run -> in folder `output` will be your file
 
 ***
 ***
