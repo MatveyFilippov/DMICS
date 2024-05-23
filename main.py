@@ -44,7 +44,7 @@ def get_json_file() -> str:
             with open(json_path, "w") as jf:
                 jf.write("here will be config data...")
         except (FileNotFoundError, IsADirectoryError):
-            print("Такого файла нет и я не могу его создать (возможно неверное указан путь)")
+            print("Такого файла нет и я не могу его создать (возможно неверно указан путь)")
             json_path = get_json_file()
     return json_path
 
@@ -106,7 +106,7 @@ while direct_choice in ["1", "2"]:
         A, B = symbol_math.solve_eq(
             main_user=main_user, alternatives=actual_society.alternatives
         )
-        print(f"(A = {A}) >= {main_user.username} >= (B = {B})")
+        print(f"(A = {A}) >= {main_user.username} >= (B = {B})")  # TODO: расписать пояснения к результатам
     except ArithmeticError:
         print(DIRECT_NOT_CALC.format(main_user.username) if direct_task else NOT_DIRECT_NOT_CALC.format(main_user.username))
     print()
