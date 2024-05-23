@@ -1,7 +1,7 @@
 # Decision-Making system (prototype) in Conflict Situation
 based on Lefebvre's theory of reflexive analysis
 
-# QuicStart
+# QuickStart
 ```shell
 git clone https://github.com/MatveyFilippov/DMICS.git
 ```
